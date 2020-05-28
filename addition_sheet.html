@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>加法计算表</title>
+		<style>
+			body{
+				
+			}
+			h1,h3,div{
+				text-align: center;
+			}
+			#sheets{
+				width: 100%;
+				border-collapse: collapse;
+			}
+			button{
+				font-size: 20px;
+			}
+			td{
+				width: 33.3%;
+				font-size: 30px;
+				line-height: 50px;
+				border-width: 2px;
+				border-style: solid;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+		<h1 id="title">加法计算表</h1>
+		<h3>题目总数：30题。出题范围：100以内加法<button onclick="ShowQuestions()">出题</button><button onclick="ShowResult()">看答案</button><button onclick="HideResult()">隐藏答案</button></h3>
+		</div>
+		<div>
+			<table id="sheets">
+				<tr><td>a+</td><td>b=</td><td>c</td></tr>
+			</table>
+		</div>
+	</body>
+	<script src="addition.js" charset="utf-8"></script>
+</html>
