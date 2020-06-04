@@ -5,18 +5,18 @@ let html = new String();
 
 function GiveQuestions() {
 	for (let i=0;i<10;i++){
-		c[i]=Math.round(Math.random() * 100);
-		a[i]=Math.round(Math.random() * c[i]);
+		c[i]=Math.round(Math.random() * 50) + 50;
+		a[i]=Math.round(Math.random() * (c[i] - 20)) + 10;
 		b[i]=c[i]-a[i];
 	}
 	for (let i=10;i<20;i++){
-		a[i]=Math.round(Math.random() * 100);
-		c[i]=Math.round(Math.random() * a[i]);
+		a[i]=Math.round(Math.random() * 50) + 50;
+		c[i]=Math.round(Math.random() * (a[i] - 20)) + 10;
 		b[i]=a[i]-c[i];
 	}
 	for (let i=20;i<30;i++){
-		c[i]=Math.round(Math.random() * 100) * 10;
-		a[i]=Math.round(Math.random() * c[i]/10) * 10;
+		c[i]=(Math.round(Math.random() * 50) + 50) * 10;
+		a[i]=Math.round(Math.random() * (c[i]/10 - 20)) * 10 + 100;
 		b[i]=c[i]-a[i];
 	}
 }
