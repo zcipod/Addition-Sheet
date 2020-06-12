@@ -11,3 +11,4 @@ Usage:
 	
 	click the 隐藏答案 button to hide the results
 	
+[![tXC929.md.png](https://s1.ax1x.com/2020/06/12/tXC929.md.png)](https://imgchr.com/i/tXC929)
